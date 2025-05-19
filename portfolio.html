@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sittichok Arromplem - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      scroll-behavior: smooth;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      margin-top: 160px;
+      font-size: 40px;
+    }
+    header p {
+      font-size: 20px;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #222;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: #ddd;
+      padding: 16px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+      font-size: 18px;
+    }
+    nav a:hover {
+      background: #333;
+      color: #fff;
+    }
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #111;
+      border-left: 5px solid #555;
+      padding-left: 10px;
+      font-size: 30px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 4px solid #333;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 20px;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      margin-top: 40px;
+    }
+    #lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 4px solid #fff;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+      header p, nav a, .card, ul {
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="รูป/รูปจบ.jpg" alt="Profile Picture">
+  <h1>Sittichok Arromplem</h1>
+  <p>📞 095-045-5462 | ✉️ sittichokarromplem@gmail.com </a></p>
+</header>
+
+<nav>
+  <a href="#objective">Objective</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#languages">Languages</a>
+</nav>
+
+<section id="objective">
+  <h2>Career Objective</h2>
+  <p>A highly motivated Electronics and Telecommunications Engineering graduate with hands-on experience in electrical systems, embedded programming, and telecommunication technology.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>B.Eng. in Telecommunication Engineering</strong> - Rajamangala University of Technology Rattanakosin (2021–2025)</li>
+    <li><strong>Diploma in Industrial Electronics</strong> - Ratchaburi Technical College (2019–2021)</li>
+    <li><strong>Vocational Certificate in Electronics</strong> - Ratchaburi Technical College (2016–2019)</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <div class="card">
+    <strong>Car Audio Technician – Freelance (2016-2018 ,2 year)</strong>
+    <p>Installed car audio systems, speaker enclosures, rear cameras, and in-vehicle electrical systems.</p>
+    <!-- <button onclick="openImage('รูป/car.jpg')">ดูรูป</button> -->
+  </div>
+  <div class="card">
+    <strong>Maintenance Technician – EGAT (2020-2021 ,3 month)</strong>
+    <p>Maintained and repaired valves and electrical components in turbine cooling systems.</p>
+    <button onclick="openImage('รูป/EL.png')">more</button>
+  </div>
+  <div class="card">
+    <strong>System Designer – iService and Supply Co., Ltd. (2023-2024 ,3 month) </strong>
+    <p>Designed and configured CCTV and telecom systems; conducted site surveys and prepared documentation.</p>
+    <button onclick="openImage('รูป/IS.png')">more</button>
+  </div>
+  <div class="card">
+    <strong>Electrical Contractor – Freelance (2024-2025,8 month)</strong>
+    <p>Designed and installed residential and outdoor electrical systems including switches and wiring.</p>
+    <button onclick="openImage('รูป/EL1.png')">more</button>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <strong>Smart Exercise Bag(Vocational Certificate Project)</strong>
+    <p>A smart backpack controlled via a mobile app using Bluetooth.</p>
+    <p>Displayed visual alerts for outdoor exercisers.</p>
+    <p>Controlled with ESP32 microcontroller programmed in C.</p>
+     <button onclick="openImage('รูป/PSH.png')">more</button>
+  </div>
+  <div class="card">
+    <strong>Temperature Scanner with Sticker Dispenser(High Vocational Certificate Project)</strong>
+    <p>Infared thermometer integrated with a mechanism to dispense stickers based on temperature check.</p>
+    <p>Used ESP32 microcontroller,programmed in C.</p>
+    <p>Included mechanical design for the sticker system.</p>
+     <button onclick="openImage('รูป/PS.png')">more</button>
+  </div>
+  <div class="card">
+    <strong>AI-Based Smart Plant Pot(Bachelor's Project)</strong>
+    <p>Automated plant pot system that responds to environmental conditions.</p>
+    <p>Sensors monitored moisture, light, and NPK levels.</p>
+    <p>Automatically watered plants and turned on grow lights based on sensor readings.</p>
+    <p>Voice-controlled using PADTHAI AI language model via ESP32 and Raspberry Pi 4.</p>
+    <p>Developed using C and Python.</p>
+     <button onclick="openImage('รูป/PT.png')">more</button>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Embedded Programming (C/C++ for ESP32, Arduino)</li>
+    <li>Python (data collection, hardware interfacing)</li>
+    <li>Electrical Installation (household and automotive)</li>
+    <li>Telecommunication Systems and CCTV setup</li>
+    <li>PCB Design and Soldering</li>
+    <li>Microsoft Office Program</li>
+    <li>basic HTML</li>
+  </ul>
+</section>
+
+<section id="languages">
+  <h2>Languages</h2>
+  <ul>
+    <li>Thai – Native</li>
+    <li>English – Intermediate (Technical Reading/Writing)</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Sittichok Arromplem. All rights reserved.
+</footer>
+
+<!-- Image Lightbox Popup -->
+<div id="lightbox" onclick="closeImage()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+  <img id="lightbox-img" src="" />
+</div>
+
+<script>
+  function openImage(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+  function closeImage() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
